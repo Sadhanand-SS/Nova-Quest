@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nova Quest</title>
+    <link rel="stylesheet" href="/src/index.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script type = "text/javascript">
+      window.addEventListener( "load", startcyber, false );
+      window.addEventListener( "load", startrdr, false );
+      window.addEventListener( "load", starthorizon, false );
+      window.addEventListener( "load", startgta, false );
+      window.addEventListener( "load", featured, false );
+      
+      function startcyber()
+      {
+        document.getElementById("cyber").addEventListener("mouseover", cyberover, false );
+        document.getElementById("cyber").addEventListener("mouseout", cyberout, false );  
+      }
+      
+      function cyberover()
+      {
+        document.getElementById("cyber").setAttribute( "src", "/public/Assets/Cyberpunk/cyberpunk.gif");
+      }
+      
+      function cyberout()
+      {
+        document.getElementById("cyber").setAttribute( "src", "/public/Assets/Cyberpunk/CYBERPUNK COVER 2.jpg");
+      }
+
+      function startrdr()
+      {
+        document.getElementById("rdr2").addEventListener("mouseover", rdrover, false );
+        document.getElementById("rdr2").addEventListener("mouseout", rdrout, false );
+      }
+
+      function rdrover()
+      {
+        document.getElementById("rdr2").setAttribute( "src", "/public/Assets/Red Dead Redemption 2/rdr2.gif");
+      }
+
+      function rdrout()
+      {
+        document.getElementById("rdr2").setAttribute( "src", "/public/Assets/Red Dead Redemption 2/RDR 2 Cover.jpg");
+      }
+
+      function starthorizon()
+      {
+        document.getElementById("horizon").addEventListener("mouseover", horizonover, false );
+        document.getElementById("horizon").addEventListener("mouseout", horizonout, false );
+      }
+
+      function horizonover()
+      {
+        document.getElementById("horizon").setAttribute( "src", "/public/Assets/Horizon Forbbiden West/forbbiden_west.gif");
+      }
+
+      function horizonout()
+      {
+        document.getElementById("horizon").setAttribute( "src", "/public/Assets/Horizon Forbbiden West/Horizon Forbbiden West Cover.jpg");
+      }
+
+      function startgta()
+      {
+        document.getElementById("gta").addEventListener("mouseover", gtaover, false );
+        document.getElementById("gta").addEventListener("mouseout", gtaout, false );
+      }
+
+      function gtaover()
+      {
+        document.getElementById("gta").setAttribute( "src", "/public/Assets/GTA V/gta_v.gif");
+      }
+
+      function gtaout()
+      {
+        document.getElementById("gta").setAttribute( "src", "/public/Assets/GTA V/GTA V COVER 2.jpg");
+      }
+
+      function featured()
+      {
+        document.getElementById("Featured").addEventListener("mousemove", moveone, false );
+        document.getElementById("Featured").addEventListener("mouseout", leaveone, false );
+      }
+      
+      function moveone()
+      {
+        document.getElementById("Featured").innerHTML ="Latest Games";
+      }
+
+      function leaveone()
+      {
+        document.getElementById("Featured").innerHTML ="Featured Games";
+      }
+    </script>
+</head>
+<body>
+    <section class="home">
+      <header>
+        <nav class="navbar navbar-expand-md navbar-dark bg">
+            <div class="container-fluid">
+              <a class="navbar-brand text-white fs-5" href="/src/index.html">
+                <img src="/public/Assets/nova quest/novoquest.png" alt="" style="width: 30px;height: 30px;">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link text-white fs-5" aria-current="page" href="/src/index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white fs-5 " href="/AboutPage/AboutPage.html">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white fs-5 " href="/Forms/Contact Us/Contact us.html">Contact</a>
+                  </li>
+                  <li class="nav-item text-white fs-5 dropdown">
+                    <a class="nav-link text-white fs-5 dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Profile
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="/src/authorization/login.html">Login</a></li>
+                      <li><a class="dropdown-item" href="/src/authorization/sign_up.html">SignUp</a></li>
+                      <li><a class="dropdown-item" href="#">Log out</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white fs-5 " href="#">Cart</a>
+                  </li>
+                </ul>
+                <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-light" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+    </header>
+      <div class="headerbg ">
+        <div class="home_content mtop ">
+          <div class="container ">
+            <div class="NEWR row">
+                <div class="left col-md-12">
+                    <a href="/Games/" style="color: white;text-decoration: none;"><h1>HOGWARTS LEGACY</h1></a>
+        
+                    <div class="detail">
+                      <span>₹3,599</span>
+                      <i class="fas fa-circle"></i>
+                      <button class="btn btn-outline-light">RPG</button>
+                    </div>
+        
+                    <p style="text-align: justify;">Hogwarts Legacy is an action role-playing game played in a third person perspective, where players are embarking on an open world journey; threatened by an ancient secret. One of the main elements for the player is to attend classes at Hogwarts School of Witchcraft and Wizardry.
+                    </p>
+                    <div class="button flex">
+                      <button class="btn btn-outline-light">BUY NOW</button>
+                      <a href="https://www.youtube.com/watch?v=BtyBjOW8sGY" style="margin-left: 20px;"><i id="palybtn" class="fas fa-play"></i></a>
+                      <p>WATCH TRAILER</p>
+                    </div>
+                  </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="popular mtop">
+        <div class="container ">
+          <div class="heading flex1">
+            <h2 id="Featured">Featured</h2>
+            <button class="btn btn-outline-light">More</button>
+          </div>
+    
+          <div class="FContent row gy-4 row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-4">
+            <div class="item col">
+              <div class="box">
+                <div class="imgBox">
+                  <a href="/src/components/horizon_forbbiden_west.html"><img src="/public/Assets/Horizon Forbbiden West/Horizon Forbbiden West Cover.jpg" alt="" id="horizon"></a>
+                  <div class="icon">
+                    <i class="far fa-heart"></i>
+                    <i class="far fa-shopping-cart"></i>
+                  </div>
+                </div>
+                <div class="text">
+                  <h3>Horizon Forbidden West</h3>
+                  <div class="detail">
+                    <span>₹5,599</span>
+                    <i class="fas fa-circle"></i>
+                    <a>Action & Adventure</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item col">
+              <div class="box">
+                <div class="imgBox">
+                  <a href="/src/components/rdr2.html"><img src="/public/Assets/Red Dead Redemption 2/RDR 2 Cover.jpg" alt="" id="rdr2"></a>
+                  <div class="icon">
+                    <i class="far fa-heart"></i>
+                    <i class="far fa-shopping-cart"></i>
+                  </div>
+                </div>
+                <div class="text">
+                  <h3>Red Dead Redemption 2</h3>
+                  <div class="detail">
+                    <span>₹3,499</span>
+                    <i class="fas fa-circle"></i>
+                    <a>Action & Adventure</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item col">
+              <div class="box">
+                <div class="imgBox">
+                  <a href="/src/components/cyberpunk.html"><img src="/public/Assets/Cyberpunk/CYBERPUNK COVER 2.jpg" alt="" id="cyber"></a>
+                  <div class="icon">
+                    <i class="far fa-heart"></i>
+                    <i class="far fa-shopping-cart"></i>
+                  </div>
+                </div>
+                <div class="text">
+                  <h3>Cyberpunk 2077</h3>
+                  <br>
+                  <div class="detail">
+                    <span>₹2,999</span>
+                    <i class="fas fa-circle"></i>
+                    <a>Action & Adventure</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item col">
+              <div class="box">
+                <div class="imgBox">
+                  <a href="/src/components/gta_v.html"><img src="/public/Assets/GTA V/GTA V COVER 2.jpg" alt="" id="gta"></a>
+                  <div class="icon">
+                    <i class="far fa-heart"></i>
+                    <i class="far fa-shopping-cart"></i>
+                  </div>
+                </div>
+                <div class="text">
+                  <h3>Grand Theft Auto V</h3>
+                  <br>
+                  <div class="detail">
+                    <span>₹2,049</span>
+                    <i class="fas fa-circle"></i>
+                    <a>Action & Adventure</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+    <section class="popular mtop">
+        <div class="container ">
+          <div class="heading flex1">
+            <h2>Trending</h2>
+            <button class="btn btn-outline-light">More</button>
+          </div>
+          <div class="FContent row gy-4 row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-4">
+            <div class="item col">
+              <div class="box">
+                <div class="imgBox">
+                  <a href="/src/components/elden_ring.html"><img src="/public/Assets/Elden Ring/Elden Ring Cover.jpg" alt=""></a>
+                  <div class="icon">
+                    <i class="far fa-heart"></i>
+                    <i class="far fa-shopping-cart"></i>
+                  </div>
+                </div>
+                <div class="text">
+                  <h3>Elden Ring</h3>
+                  <br>
+                  <div class="detail">
+                    <span>₹2,599</span>
+                    <i class="fas fa-circle"></i>
+                    <a>RPG</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item col">
+              <div class="box">
+                <div class="imgBox">
+                  <a href="/src/components/evil_west.html"><img src="/public/Assets/Evil West/EVIL WEST COVER.jpg" alt=""></a>
+                  <div class="icon">
+                    <i class="far fa-heart"></i>
+                    <i class="far fa-shopping-cart"></i>
+                  </div>
+                </div>
+                <div class="text">
+                  <h3>Evil West</h3>
+                  <br>
+                  <div class="detail">
+                    <span>₹2,399</span>
+                    <i class="fas fa-circle"></i>
+                    <a>Action & Adventure</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item col">
+              <div class="box">
+                <div class="imgBox">
+                  <a href="/src/components/atomic_heart.html"><img src="/public/Assets/Atomic Heart/Atomic Heart Cover 2.jpg" alt=""></a>
+                  <div class="icon">
+                    <i class="far fa-heart"></i>
+                    <i class="far fa-shopping-cart"></i>
+                  </div>
+                </div>
+                <div class="text">
+                  <h3>Atomic Heart</h3>
+                  <br>
+                  <div class="detail">
+                    <span>₹2,699</span>
+                    <i class="fas fa-circle"></i>
+                    <a>RPG</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item col">
+              <div class="box">
+                <div class="imgBox">
+                  <a href="/src/components/callisto_protocal.html"><img src="/public/Assets/Callisto Protocal/Callisto Protocal Cover.jpg" alt=""></a>
+                  <div class="icon">
+                    <i class="far fa-heart"></i>
+                    <i class="far fa-shopping-cart"></i>
+                  </div>
+                </div>
+                <div class="text">
+                  <h3>The Callisto Protocol</h3>
+                  <div class="detail">
+                    <span>₹2,499</span>
+                    <i class="fas fa-circle"></i>
+                    <a>Horror</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+    <section class="NewDeals">
+        <div class="container ">
+            <div class="heading flex1">
+                <h2>Best Deals</h2>
+            </div>
+            <div class="HighlightCon row">
+                <div class="shelf col-md-12" >
+                    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                        </div>
+                        <div class="carousel-inner" style="border-radius: 15px;">
+                          <div class="carousel-item active" data-bs-interval="10000">
+                            <a href="/src/components/death_stranding.html"><img src="/public/Assets/Death Stranding/Death Stranding Cover 2.png" class="d-block w-100" alt="..."></a>
+                            <div class="carousel-caption d-none d-md-block">
+                              <h2 style="color: white;text-shadow: 2px 2px 4px #000000;">Death Stranding Director's Cut</h2>
+                              <p style="color: white;text-shadow: 2px 2px 4px #000000;">Some representative placeholder content for the third slide.</p>
+                            </div>
+                          </div>
+                          <div class="carousel-item" data-bs-interval="10000">
+                            <a href="/src/components/horizon_zero_dawn.html"><img src="/public/Assets/Horizon Zero Dawn/Horizon Zero Dawn Cover.jpg" class="d-block w-100" alt="..."></a>
+                            <div class="carousel-caption d-none d-md-block">
+                              <h2 style="color: white;text-shadow: 2px 2px 4px #000000;">Horizon Zero Dawn: Complete Edition</h2>
+                              <p style="color: white;text-shadow: 2px 2px 4px #000000;">Some representative placeholder content for the second slide.</p>
+                            </div>
+                          </div>
+                          <div class="carousel-item" data-bs-interval="10000">
+                            <a href="/src/components/days_gone.html"><img src="/public/Assets/Days Gone/Days Gone Cover.jpg" class="d-block w-100" alt="..."></a>
+                            <div class="carousel-caption d-none d-md-block">
+                              <h2 style="color: white;text-shadow: 2px 2px 4px #000000;">Days Gone</h2>
+                              <p style="color: white;text-shadow: 2px 2px 4px #000000;">Some representative placeholder content for the third slide.</p>
+                            </div>
+                          </div>
+                          <div class="carousel-item" data-bs-interval="10000">
+                            <a href="/src/components/a_plague_tale.html"><img src="/public/Assets/A Plague Tale/A Plague Tale Cover.jpg" class="d-block w-100" alt="..."></a>
+                            <div class="carousel-caption d-none d-md-block">
+                              <h2 style="color: white;text-shadow: 2px 2px 4px #000000;">A Plague Tale: Requiem</h2>
+                              <p style="color: white;text-shadow: 2px 2px 4px #000000;">Some representative placeholder content for the third slide.</p>
+                            </div>
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                </div>
+            </div>
+    </section>
+    <section class="popular mtop">
+        <div class="container ">
+          <div class="heading flex1">
+            <h2>Action</h2>
+            <button class="btn btn-outline-light">More</button>
+          </div>
+          <div class="FContent row gy-4 row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-4">
+            <div class="item col">
+              <div class="box">
+                <div class="imgBox">
+                  <a href=""><img src="/public/Assets/Tekken 7/Tekken 7 Cover.jpg" alt=""></a>
+                  <div class="icon">
+                    <i class="far fa-heart"></i>
+                    <i class="far fa-shopping-cart"></i>
+                  </div>
+                </div>
+                <div class="text">
+                  <h3>Tekken 7</h3>
+                  <div class="detail">
+                    <span>₹1,499</span>
+                    <i class="fas fa-circle"></i>
+                    <a>Action</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item col">
+              <div class="box">
+                <div class="imgBox">
+                  <a href=""><img src="/public/Assets/SIFU/SIFU Cover.jpg" alt=""></a>
+                  <div class="icon">
+                    <i class="far fa-heart"></i>
+                    <i class="far fa-shopping-cart"></i>
+                  </div>
+                </div>
+                <div class="text">
+                  <h3>Sifu</h3>
+                  <div class="detail">
+                    <span>₹999</span>
+                    <i class="fas fa-circle"></i>
+                    <a>Action</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item col">
+              <div class="box">
+                <div class="imgBox">
+                  <a href=""><img src="/public/Assets/Naraka/Naraka Cover 2.jpg" alt=""></a>
+                  <div class="icon">
+                    <i class="far fa-heart"></i>
+                    <i class="far fa-shopping-cart"></i>
+                  </div>
+                </div>
+                <div class="text">
+                  <h3>Naraka: Bladepoint</h3>
+                  <div class="detail">
+                    <span>₹1,199</span>
+                    <i class="fas fa-circle"></i>
+                    <a>Action</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item col">
+              <div class="box">
+                <div class="imgBox">
+                  <a href=""><img src="/public/Assets/Mortal Kombat 11/Mortal Kombat 11 Cover.jpg" alt=""></a>
+                  <div class="icon">
+                    <i class="far fa-heart"></i>
+                    <i class="far fa-shopping-cart"></i>
+                  </div>
+                </div>
+                <div class="text">
+                  <h3>Mortal Kombat 11</h3>
+                  <div class="detail">
+                    <span>₹2,699</span>
+                    <i class="fas fa-circle"></i>
+                    <a>Action</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+    <section class="popular mtop">
+        <div class="container ">
+          <div class="heading flex1">
+            <h2>Battle Royal</h2>
+            <button class="btn btn-outline-light">More</button>
+          </div>
+          <div class="FContent row gy-4 row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-4">
+            <div class="item col">
+              <div class="box">
+                <div class="imgBox">
+                  <a href=""><img src="/public/Assets/Apex Legends/Apex Cover.jpg" alt=""></a>
+                  <div class="icon">
+                    <i class="far fa-heart"></i>
+                    <i class="far fa-shopping-cart"></i>
+                  </div>
+                </div>
+                <div class="text">
+                  <h3>Apex Legends</h3>
+                  <br>
+                  <div class="detail">
+                    <span>Free</span>
+                    <i class="fas fa-circle"></i>
+                    <a>Battle Royal</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item col">
+              <div class="box">
+                <div class="imgBox">
+                  <a href=""><img src="/public/Assets/CSGO/CSGO Cover.jpg" alt=""></a>
+                  <div class="icon">
+                    <i class="far fa-heart"></i>
+                    <i class="far fa-shopping-cart"></i>
+                  </div>
+                </div>
+                <div class="text">
+                  <h3>Counter-Strike: Global Offensive</h3>
+                  <div class="detail">
+                    <span>Free</span>
+                    <i class="fas fa-circle"></i>
+                    <a>Battle Royal</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item col">
+              <div class="box">
+                <div class="imgBox">
+                  <a href=""><img src="/public/Assets/Valorant/Valorant Cover.jpg" alt=""></a>
+                  <div class="icon">
+                    <i class="far fa-heart"></i>
+                    <i class="far fa-shopping-cart"></i>
+                  </div>
+                </div>
+                <div class="text">
+                  <h3>Valorent</h3>
+                  <br>
+                  <div class="detail">
+                    <span>Free</span>
+                    <i class="fas fa-circle"></i>
+                    <a>Battle Royal</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item col">
+              <div class="box">
+                <div class="imgBox">
+                  <a href=""><img src="/public/Assets/COD MWII/COD MW II Cover.jpg" alt=""></a>
+                  <div class="icon">
+                    <i class="far fa-heart"></i>
+                    <i class="far fa-shopping-cart"></i>
+                  </div>
+                </div>
+                <div class="text">
+                  <h3>Call of Duty: Modern Warfare II</h3>
+                  <div class="detail">
+                    <span>₹4,999</span>
+                    <i class="fas fa-circle"></i>
+                    <a>Battle Royal</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+          <div class="Contents row">
+            <div class="LogoBox col-md-3 col-sm-6">
+                <div class="logo">
+                    <img src="/public/Assets/nova quest/novoquest_footer.png">
+                </div>
+                <p style="opacity: 0.7;margin: 20px;text-align: justify;"> Buy PC games and get the latest game and community news with Nova Quest.</p>
+                <div class="icon" style="margin: 20px;">
+                    <a href="https://www.facebook.com/sadhanand.official/"><i class="fab fa-facebook-square"></i></a>
+                    <a href="https://www.instagram.com/iam_sadhanand/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://twitter.com/explore"><i class="fab fa-twitter-square"></i></a>
+                    <a href="https://www.youtube.com/channel/UCGc9Z5TN7T4JrDKRYi86UvA"><i class="fab fa-youtube-square"></i></a>
+                </div>
+            </div>
+            <div class="ExploreBox col-md-2 col-sm-6">
+                <h2 style="margin: 20px;">Explore</h2>
+                <div class="flex">
+                    <ul>
+                        <li><a href="/HomePage/HomePage.html">Home</a></li>
+                        <li><a href="#">New Releases</a></li>
+                        <li><a href="#">Trending</a></li>
+                        <li><a href="#">Most Rated</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="CompanyBox col-md-2 col-sm-6">
+                <h2 style="margin: 20px;">Company</h2>
+                <div class="flex">
+                    <ul>
+                        <li><a href="#">Company</a></li>
+                        <li><a href="#">Terms of Use</a></li>
+                        <li><a href="/Forms/Contact Us/Contact us.html">Contact us</a></li>
+                        <li><a href="#">Our Team</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="Download box col-md-5 col-sm-6">
+                <h2 style="margin: 20px;">Download App</h2>
+                <p style="opacity: 0.7;margin: 20px;text-align: justify;">With the Nova Quest Mobile App, you can take Nova Quest with you anywhere. Buy PC games and get the latest game and community news - while protecting your Nova Quest account. Shop Nova Quest and Browse the Nova Quest catalog of PC games from your phone. Never miss a sale again.</p>
+                <div class="app row">
+                    <img class="col-md-6" src="/public/Assets/nova quest/appstore.png" alt="">
+                    <img class="col-md-6" src="/public/Assets/nova quest/playstore.png" alt="">
+                </div>
+                <br>
+            </div>
+        </div>
+        
+    </footer>
+    <p class="legal">Copyright (c) 2023 Copyright Holder All Rights Reserved | Made By <i class="fas fa-heart"></i> Sadhanand S S</p>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    </body>
+    </html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link rel="stylesheet" href="/src/payment/payment.css">
+    <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/149/149071.png">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  </head>
+<body>
+    <div class="container" style="margin-top: 110px;">
+        <div class="HighlCon row justify-content-evenly">
+          <div class="shelf col-md-6" style="margin-top: 20px;">
+            <h2 class="text-white">Checkout</h2>
+            <div class="card-group">
+                <div class="debitcard" >
+                  <div class="logo"><img src="https://raw.githubusercontent.com/dasShounak/freeUseImages/main/Visa-Logo-PNG-Image.png" alt="Visa"></div>
+                  <div class="chip"><img src="https://raw.githubusercontent.com/dasShounak/freeUseImages/main/chip.png" alt="chip"></div>
+                  <div class="number">1234 5678 9012 3456</div>
+                  <div class="name">NAME</div>
+                  <div class="from">10/22</div>
+                  <div class="to">06/27</div>
+                  <div class="ring"></div>
+                </div>
+            </div>
+            <br>
+            <form action="#" class="form" name="myform" method="post">
+                <div class="user-details row">
+                    <div class="input-box col-md-12 col-sm-12">
+                      <span class="details">Name</span>
+                      <input type="text" name="BankName" placeholder="Enter your name" required>
+                    </div>
+                    <div class="input-box col-md-12 col-sm-12">
+                      <span class="details">Card number</span>
+                      <input type="text" name="CardNum" placeholder="Enter your Card number" required>
+                    </div>
+                    <div class="input-box col-md-6 col-sm-12">
+                      <span class="details">Expiration date(mm/yy)</span>
+                      <input type="text" name="Expdate" placeholder="Enter your Expiration date" required>
+                    </div>
+                    <div class="input-box col-md-6 col-sm-12">
+                        <span class="details">CVV</span>
+                        <input type="text" name="CVV" placeholder="Enter your CVV" required>
+                      </div>
+                  </div>
+                  <button class="col-12 btn btn-outline-light col" formaction="http://localhost:3000/orderGTAV">Place Order</button><br>
+            </form>
+          </div>
+          
+          <div class="info col-md-3" style="margin-top: 20px;">
+            <h2 class="text-white">Order Summary</h2>
+            <img src="/public/Assets/GTA V/GTA V COVER 2.jpg" style="margin-top: 20px;width:auto;height:auto;border-radius: 20px;" class="d-block w-100" alt="..."><br>
+            <br><p class="text-white" style="text-align: justify;">Grand Theft Auto V for PC offers players the option to explore the award-winning world of Los Santos and Blaine County in resolutions of up to 4k and beyond, as well as the chance to experience the game running at 60 frames per second.</p>
+            <h3 class="text-white">Grand Theft Auto V</h3>
+            <h6 class="text-white">Rockstar Games</h6>
+            <table style="width:100%;margin-top: 40px;">
+              <tr>
+                <td class="text-white">Price</td>
+                <td class="text-white">₹3,999</td>
+              </tr>
+              <tr>
+                <td class="text-white">Discount</td>
+                <td class="text-white">-₹1,950</td>
+              </tr>
+              <tr>
+                <td class="text-white">Total</td>
+                <td class="text-white">₹ 5,599</td>
+              </tr>  
+            </table>
+
+            <br>
+          </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

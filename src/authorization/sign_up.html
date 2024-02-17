@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="/src/authorization/sign_up.css">
+    <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/149/149071.png">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  </head>
+<body>
+    <section class="SignUp">
+        <div class="container" style="max-width: 700px;">
+            <form action="" class="form" name="myform" method="post" onsubmit="return validateform()">
+                <br><h2 class="text-white text-center">Register Your Account</h2><br>
+                <div class="user-details row">
+                    <div class="input-box col-md-6 col-sm-12">
+                      <span class="details">Full Name</span>
+                      <input type="text" name="Name" placeholder="Enter your name" >
+                    </div>
+                    <div class="input-box col-md-6 col-sm-12">
+                      <span class="details">Username</span>
+                      <input type="text" name="Username" placeholder="Enter your username" >
+                    </div>
+                    <div class="input-box col-md-6 col-sm-12">
+                      <span class="details">Email</span>
+                      <input type="email" name="Email" placeholder="Enter your email" >
+                    </div>
+                    <div class="input-box col-md-6 col-sm-12">
+                      <span class="details">Phone Number</span>
+                      <input type="text" name="Phno" placeholder="Enter your number" >
+                    </div>
+                    <div class="input-box col-md-6 col-sm-12">
+                      <span class="details">Password</span>
+                      <input type="password" name="Password" placeholder="Enter your password" >
+                    </div>
+                    <div class="input-box col-md-6 col-sm-12">
+                      <span class="details">Confirm Password</span>
+                      <input type="password" name="ConPassword" placeholder="Confirm your password" >
+                    </div>
+                    <div class="gender-box col-12">
+                        <label class="text-white">Gender</label>
+                        <div class="gender-option">
+                            <div class="gender">
+                                <input type="radio" id="check-male" name="gender" /> <label for="check-male">Male</label>
+                            </div>
+                            <div class="gender">
+                                <input type="radio" id="check-female" name="gender" /> <label for="check-female">Female</label>
+                            </div>
+                            <div class="gender">
+                                <input type="radio" id="check-other" name="gender" /> <label for="check-other">Prefer not to say</label>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="login"><br>
+                    <p class="forget">Already have an account ? <a
+                        href="/src/authorization/login.html" target="_self">Log In</a></p>
+                  </div>
+                  <button class="col-12 btn btn-outline-light col" formaction="http://localhost:3000/save">Submit</button>
+            </form>
+        </div>
+    </section>
+    <script>
+        function validateform() {
+            var Name = document.myform.Name.value;
+            var Username = document.myform.Username.value;
+            var Password = document.myform.Password.value;
+            var ConPassword = document.myform.ConPassword.value;
+            var Phno = document.myform.Phno.value;
+            var Email = document.myform.Email.value;
+    
+            if (Name == null || Name == "") {
+                alert("Name can't be blank");
+                return false;
+            }
+            if (Username == null || Username == "") {
+                alert("Userame can't be blank");
+                return false;
+            }
+            if (Password == "") {
+                alert("Please enter your Password");
+                Password.focus();
+                return false;
+            }
+    
+            if (Password != ConPassword) {
+                alert("Password mismatch! Please try again");
+                return false;
+            }
+            if (Password.length != "") {
+                var regex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})/;
+                if (regex.test(Password) === false) {
+                    alert("Please enter a valid Password");
+                    return false;
+                }
+            }
+            if (Name.length != "") {
+                var regex = /^(?=.[A-z])/;
+                if (regex.test(Name) === false) {
+                    alert("Please enter a valid Name");
+                    return false;
+                }
+            }
+            if (Username.length != "") {
+                var regex = /^(?=.[A-z])/;
+                if (regex.test(Username) === false) {
+                    alert("Please enter a valid Username");
+                    return false;
+                }
+            }
+            if (Name.length != "") {
+                var regex = /^(?=.[A-z])/;
+                if (regex.test(Name) === false) {
+                    alert("Please enter a valid Name");
+                    return false;
+                }
+            }
+            if(Phno.length!=10)
+            {
+                alert("Please enter a valid phone number");
+                return false;
+            }
+            if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(Email)) {
+                return (true)
+            }
+            else {
+                alert("You have entered an invalid Email address!")
+                return (false)
+            }
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="/src/contact/contact.css">
+    <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/149/149071.png">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  </head>
+<body>
+    <section class="SignUp">
+        <div class="container" style="max-width: 700px;">
+            <form action="#" class="form" name="myform" method="post">
+                <br><h2 class="text-white text-center">Contact Us</h2><br>
+                <div class="user-details row">
+                    <div class="input-box col-md-12 col-sm-12">
+                      <span class="details">Name</span>
+                      <input type="text" name="CName" placeholder="Enter your name" required>
+                    </div>
+                    <div class="input-box col-md-12 col-sm-12">
+                      <span class="details">Subject</span>
+                      <input type="text" name="CSubject" placeholder="Enter your subject" required>
+                    </div>
+                    <div class="input-box col-md-12 col-sm-12">
+                      <span class="details">Email</span>
+                      <input type="email" name="CEmail" placeholder="Enter your email" required>
+                    </div>
+                    <div class="input-box col-md-12 col-sm-12">
+                      <span class="details">Message</span>
+                      <textarea id="message" name="CMessage" class="form-control" placeholder="Your message here..." required cols="30" rows="10"></textarea>
+                    </div>
+                 </div>
+                <button type="submit" class="col-12 btn btn-outline-light col" formaction="http://localhost:3000/contact">Submit</button>
+            </form>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
